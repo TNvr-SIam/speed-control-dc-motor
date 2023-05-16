@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<System>
+  <P Name="Location">[-1, -7, 1537, 865]</P>
+  <P Name="Open">on</P>
+  <P Name="ZoomFactor">150</P>
+  <P Name="ReportName">simulink-default.rpt</P>
+  <P Name="SIDHighWatermark">44</P>
+  <Block BlockType="Abs" Name="Abs" SID="8">
+    <P Name="Position">[-1430, -455, -1400, -425]</P>
+    <P Name="ZOrder">315</P>
+    <P Name="SaturateOnIntegerOverflow">off</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add" SID="5">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-1330, -463, -1270, -372]</P>
+    <P Name="ZOrder">312</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-+</P>
+  </Block>
+  <Block BlockType="Sum" Name="Add1" SID="36">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-525, -283, -490, -227]</P>
+    <P Name="ZOrder">5912</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="IconShape">rectangular</P>
+    <P Name="Inputs">-+</P>
+  </Block>
+  <Block BlockType="BusSelector" Name="Bus&#xA;Selector" SID="31">
+    <PortCounts in="1" out="4"/>
+    <P Name="Position">[-410, -470, -405, -380]</P>
+    <P Name="ZOrder">5907</P>
+    <P Name="OutputSignals">Speed wm (rad/s),Armature current ia (A),Field current if (A),Electrical torque Te (n m)</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="Name">&lt;Speed wm (rad/s)&gt;</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="Name">&lt;Armature current ia (A)&gt;</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="Name">&lt;Field current if (A)&gt;</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="Name">&lt;Electrical torque Te (n m)&gt;</P>
+      </Port>
+    </PortProperties>
+  </Block>
+  <Block BlockType="CustomWebBlock" Name="Circular Gauge" SID="30">
+    <P Name="Position">[-563, -638, -403, -478]</P>
+    <P Name="ZOrder">5906</P>
+    <P Name="ForegroundColor">[1.000000, 1.000000, 0.784300]</P>
+    <P Name="BackgroundColor">black</P>
+    <P Name="ShowName">off</P>
+    <P Name="FontName">Arial</P>
+    <P Name="FontSize">14</P>
+    <P Name="LabelPosition">Hide</P>
+    <P Name="BindingPersistence" Ref="bdmxdata:BindingPersistence_30"/>
+    <P Name="ShowInitialText">on</P>
+    <P Name="Configuration">{&quot;components&quot;:[{&quot;name&quot;:&quot;CircularScaleComponent&quot;,&quot;settings&quot;:{&quot;bounds&quot;:{&quot;max&quot;:300,&quot;min&quot;:0,&quot;tickInterval&quot;:&quot;auto&quot;},&quot;direction&quot;:&quot;cw&quot;,&quot;flipLimits&quot;:0,&quot;innerRadius&quot;:0.75,&quot;internalTickHeightScaleFactor&quot;:1,&quot;labelColor&quot;:[255,255,200],&quot;labelFont&quot;:{&quot;font&quot;:&quot;Arial&quot;,&quot;fontSize&quot;:12},&quot;labelRadius&quot;:0.528,&quot;labelTransparency&quot;:1,&quot;minorTickHeightScaleFactor&quot;:0.2,&quot;needleImage&quot;:{&quot;size&quot;:[200,50],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjEuMiwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAgNTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwMCA1MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNFQzIxMjc7fQo8L3N0eWxlPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTYyLjgsMTMuN0MxNjksNC40LDE4MS43LDEuOSwxOTEsOC4xczExLjgsMTguOSw1LjYsMjguMnMtMTguOSwxMS44LTI4LjIsNS42bDAsMAoJQzE1OS4xLDM1LjYsMTU2LjYsMjMsMTYyLjgsMTMuN0wxNjIuOCwxMy43eiBNMTY1LjgsMTUuOGMtNS4xLDcuNi0zLjEsMTcuOSw0LjYsMjNjNy42LDUuMSwxNy45LDMuMSwyMy00LjYKCWM1LjEtNy42LDMuMS0xNy45LTQuNi0yM2wwLDBDMTgxLjIsNi4yLDE3MC45LDguMiwxNjUuOCwxNS44eiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMC40LDI1Ljl2LTMuM2wxNTktMi41Yy0wLjcsMi42LTAuNyw1LjIsMCw3LjhMMC40LDI1Ljl6Ii8+CjxjaXJjbGUgY2xhc3M9InN0MCIgY3g9IjE3OS42IiBjeT0iMjQiIHI9IjAuNyIvPgo8L3N2Zz4K&quot;},&quot;needleOffset&quot;:[0.18464878250906522,0],&quot;needleOrientation&quot;:-45,&quot;needleRotation&quot;:180,&quot;needleSize&quot;:{&quot;height&quot;:0.11741692305346914,&quot;width&quot;:0.46108337545091255},&quot;outerRadius&quot;:0.9,&quot;position&quot;:[0.05,0.05,0.9,0.9],&quot;referencePoint&quot;:&quot;auto&quot;,&quot;scaleAngle&quot;:270,&quot;scaleAngleOffset&quot;:135,&quot;scaleColors&quot;:[],&quot;scaleColorsSize&quot;:0.2,&quot;scaleDirection&quot;:&quot;CW&quot;,&quot;scalePosition&quot;:[0,0,1,1],&quot;showLabels&quot;:1,&quot;showMinorTicks&quot;:1,&quot;showSpanLine&quot;:1,&quot;showTicks&quot;:1,&quot;tickColor&quot;:[252,252,197],&quot;tickTransparency&quot;:0.1,&quot;valueBarColor&quot;:[0,114,189],&quot;valueBarPosition&quot;:[0,0,1,1],&quot;valueBarSize&quot;:0.2,&quot;valueBarTransparency&quot;:1}},{&quot;name&quot;:&quot;BackgroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[500,500],&quot;src&quot;:&quot;data:image\/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iTGF5ZXJfMiIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCA1MDAgNTAwIgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDAgNTAwOyIKICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgc29kaXBvZGk6ZG9jbmFtZT0ic3BlZWRNUEgtbm90aWNrcy5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMGJldGExICgzMmQ0ODEyLCAyMDE5LTA5LTE5KSI+CiAgPG1ldGFkYXRhCiAgIGlkPSJtZXRhZGF0YTEyNiI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgoKICAgICAgICA8ZGM6dHlwZQogICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgoKICAgICAgICA8ZGM6dGl0bGUgLz4KCiAgICAgIDwvY2M6V29yaz4KCiAgICA8L3JkZjpSREY+CgogIDwvbWV0YWRhdGE+CgogIDxkZWZzCiAgIGlkPSJkZWZzMTI0IiAvPgoKICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICBndWlkZXRvbGVyYW5jZT0iMTAiCiAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE2MDAiCiAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjExNTUiCiAgIGlkPSJuYW1lZHZpZXcxMjIiCiAgIHNob3dncmlkPSJmYWxzZSIKICAgaW5rc2NhcGU6em9vbT0iMS4wMDk1Mzg0IgogICBpbmtzY2FwZTpjeD0iMjA4LjQ0NTU3IgogICBpbmtzY2FwZTpjeT0iMzMxLjQyODU3IgogICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgaW5rc2NhcGU6d2luZG93LXk9IjIzIgogICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIwIgogICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJMYXllcl8yIgogICBpbmtzY2FwZTpkb2N1bWVudC1yb3RhdGlvbj0iMCIgLz4KCiAgPHN0eWxlCiAgIHR5cGU9InRleHQvY3NzIgogICBpZD0ic3R5bGUyIj4KCS5zdDB7ZmlsbDp1cmwoI1NWR0lEXzFfKTt9Cgkuc3Qxe2ZpbGw6dXJsKCNTVkdJRF8yXyk7fQoJLnN0MntmaWxsOnVybCgjU1ZHSURfM18pO30KCS5zdDN7ZmlsbDp1cmwoI1NWR0lEXzRfKTt9Cgkuc3Q0e2ZpbGw6dXJsKCNTVkdJRF81Xyk7fQoJLnN0NXtmaWxsOnVybCgjU1ZHSURfNl8pO30KCS5zdDZ7ZmlsbDp1cmwoI1NWR0lEXzdfKTt9Cgkuc3Q3e2ZpbGw6IzY4Nzg4Mjt9Cjwvc3R5bGU+CgogIDxyYWRpYWxHcmFkaWVudAogICBpZD0iU1ZHSURfMV8iCiAgIGN4PSIyMzEuMDA3OSIKICAgY3k9IjY0LjQ3ODgiCiAgIHI9IjM3NS43NDc1IgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuNDMyNDA2NiwwLDAsMS40MzI0MjY1LC05MC45Njc3ODMsLTk3LjM4MjE0KSIKICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMkY0NjUxIgogICBpZD0ic3RvcDQiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjExMDEiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMzNjRFNUEiCiAgIGlkPSJzdG9wNiIgLz4KCiAgICA8c3RvcAogICBvZmZzZXQ9IjAuMjk0MyIKICAgc3R5bGU9InN0b3AtY29sb3I6IzQ2NjI2RiIKICAgaWQ9InN0b3A4IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4zNTcxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojNEM2OTc3IgogICBpZD0ic3RvcDEwIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4zODg0IgogICBzdHlsZT0ic3RvcC1jb2xvcjojNTI3MDdFIgogICBpZD0ic3RvcDEyIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC40NDA5IgogICBzdHlsZT0ic3RvcC1jb2xvcjojNjE4MjkyIgogICBpZD0ic3RvcDE0IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC41MDgxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojN0JBMEIyIgogICBpZD0ic3RvcDE2IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC41ODY3IgogICBzdHlsZT0ic3RvcC1jb2xvcjojQTBDQkRGIgogICBpZD0ic3RvcDE4IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC42MjY0IgogICBzdHlsZT0ic3RvcC1jb2xvcjojQjZFNEZBIgogICBpZD0ic3RvcDIwIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC44Mjk3IgogICBzdHlsZT0ic3RvcC1jb2xvcjojODJBNEI1IgogICBpZD0ic3RvcDIyIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMSIKICAgc3R5bGU9InN0b3AtY29sb3I6IzU5NzI3RiIKICAgaWQ9InN0b3AyNCIgLz4KCiAgPC9yYWRpYWxHcmFkaWVudD4KCiAgPGVsbGlwc2UKICAgY2xhc3M9InN0MCIKICAgY3g9IjI1MCIKICAgY3k9IjI1MCIKICAgcng9IjI0NS4xOTgzMyIKICAgcnk9IjI0NS4xOTg1IgogICBpZD0iZWxsaXBzZTI3IgogICBzdHlsZT0iZmlsbDp1cmwoI1NWR0lEXzFfKTtzdHJva2Utd2lkdGg6MS4zMDc4NyIgLz4KCiAgPHJhZGlhbEdyYWRpZW50CiAgIGlkPSJTVkdJRF8yXyIKICAgY3g9IjIzMS4zMjUiCiAgIGN5PSI3Mi40Nzk4IgogICByPSIzNTguODYxIgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuNDMyNDA2NiwwLDAsMS40MzI4MzEzLC05MC45Njc3ODMsLTk3LjQxNDEzMSkiCiAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgIDxzdG9wCiAgIG9mZnNldD0iMS4wOTg5MDBlLTAyIgogICBzdHlsZT0ic3RvcC1jb2xvcjojM0U0RjU4IgogICBpZD0ic3RvcDI5IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iNi4xMzI0MTdlLTAyIgogICBzdHlsZT0ic3RvcC1jb2xvcjojNDQ1NzYxIgogICBpZD0ic3RvcDMxIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4xNDU4IgogICBzdHlsZT0ic3RvcC1jb2xvcjojNTU2QTc2IgogICBpZD0ic3RvcDMzIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4yNTQxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojNkQ4ODk1IgogICBpZD0ic3RvcDM1IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4zODE5IgogICBzdHlsZT0ic3RvcC1jb2xvcjojOEZCMkMzIgogICBpZD0ic3RvcDM3IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC41MTY1IgogICBzdHlsZT0ic3RvcC1jb2xvcjojQjZFNEZBIgogICBpZD0ic3RvcDM5IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMSIKICAgc3R5bGU9InN0b3AtY29sb3I6IzE1NDY1NyIKICAgaWQ9InN0b3A0MSIgLz4KCiAgPC9yYWRpYWxHcmFkaWVudD4KCiAgPGVsbGlwc2UKICAgY2xhc3M9InN0MSIKICAgY3g9IjI1MCIKICAgY3k9IjI1MC4wNjYxOCIKICAgcng9IjIzNC4yNDYyMiIKICAgcnk9IjIzNC4yNDYiCiAgIGlkPSJlbGxpcHNlNDQiCiAgIHN0eWxlPSJmaWxsOnVybCgjU1ZHSURfMl8pO3N0cm9rZS13aWR0aDoxLjMwODA1IiAvPgoKICA8bGluZWFyR3JhZGllbnQKICAgaWQ9IlNWR0lEXzNfIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgeDE9IjI1MS4wMjc4IgogICB5MT0iNTcwLjEyMjIiCiAgIHgyPSIyNTEuMDI3OCIKICAgeTI9IjI1Ljg0MTEiCiAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4yODg0ODMsMCwwLDEuMzI3ODg4LC03My40MDkyMzgsLTgyLjcxMDE1NSkiPgogICAgPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDA1QTdEIgogICBpZD0ic3RvcDQ2IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iOS40ODQ3ODZlLTAyIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDA0QzZCIgogICBpZD0ic3RvcDQ4IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4yMjYxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAzQjU1IgogICBpZD0ic3RvcDUwIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4zNjkyIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAyQjQyIgogICBpZD0ic3RvcDUyIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC41MjgxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAxODI2IgogICBpZD0ic3RvcDU0IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC43MTUxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwNjBDIgogICBpZD0ic3RvcDU2IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMSIKICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMCIKICAgaWQ9InN0b3A1OCIgLz4KCiAgPC9saW5lYXJHcmFkaWVudD4KCiAgPGVsbGlwc2UKICAgY2xhc3M9InN0MiIKICAgY3g9IjI1MCIKICAgY3k9IjI1MC4wNTg1NiIKICAgcng9IjIzMC4xMjMwOSIKICAgcnk9IjIzMC4xMjMiCiAgIGlkPSJlbGxpcHNlNjEiCiAgIHN0eWxlPSJkaXNwbGF5OmlubGluZTtmaWxsOnVybCgjU1ZHSURfM18pO3N0cm9rZS13aWR0aDoxLjMwODA0IiAvPgoKICA8bGluZWFyR3JhZGllbnQKICAgaWQ9IlNWR0lEXzRfIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgeDE9IjI1MC4zMjA2IgogICB5MT0iMjY3LjQ4MTMiCiAgIHgyPSIyNTAuMzIwNiIKICAgeTI9IjU3LjQzNyIKICAgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxLjI4ODQ4MywwLDAsMS4zMjc1NTAxLC03Mi4zOTI3ODMsLTcwLjk4NDY1OSkiPgogICAgPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMjE0MTRFIgogICBpZD0ic3RvcDYzIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC4xOTA4IgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAzNDQ0IgogICBpZD0ic3RvcDY1IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC40NTMzIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAyMjMwIgogICBpZD0ic3RvcDY3IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC42ODUzIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAxMjFCIgogICBpZD0ic3RvcDY5IiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC44NzU0IgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwNDA4IgogICBpZD0ic3RvcDcxIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMSIKICAgc3R5bGU9InN0b3AtY29sb3I6IzAwMDAwMCIKICAgaWQ9InN0b3A3MyIgLz4KCiAgPC9saW5lYXJHcmFkaWVudD4KCiAgPHBhdGgKICAgY2xhc3M9InN0MyIKICAgZD0iTSA0NjYuODM3MzYsMTgxLjc4MDg4IEMgNDM0LjM2NzU5LDk0LjE2MjU3MiAzNDkuOTcxOTYsMzEuNjM0OTU5IDI1MS4wMTY0NiwzMS42MzQ5NTkgYyAtMTAwLjg4ODIyLDAgLTE4Ni41NzIzNDYsNjQuOTE3MTkzIC0yMTcuNjI0Nzg5LDE1NS4zMjMzNTEgMTguNTU0MTU3LDQ0Ljg3MTIgMTA2LjU1NzU0OSw4LjA5ODA3IDIxNC4xNDU4ODksOC4wOTgwNyAxMTEuMzI0OTIsLTAuMTMyNzYgMjA0LjczOTkzLDM5LjQyODI0IDIxOS4yOTk4LC0xMy4yNzU1IHoiCiAgIGlkPSJwYXRoNzYiCiAgIHN0eWxlPSJkaXNwbGF5OmlubGluZTtmaWxsOnVybCgjU1ZHSURfNF8pO3N0cm9rZS13aWR0aDoxLjMwNzg3IgogICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgoKICA8bGluZWFyR3JhZGllbnQKICAgaWQ9IlNWR0lEXzVfIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgeDE9IjI1MS4wMjc1IgogICB5MT0iNDYzLjAzNDQiCiAgIHgyPSIyNTEuMDI3NSIKICAgeTI9IjQ4LjcwOCI+CiAgICA8c3RvcAogICBvZmZzZXQ9IjAiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiNGRkZGRkYiCiAgIGlkPSJzdG9wNzgiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIxLjI0NjkzMWUtMDIiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiNGNkY4RjkiCiAgIGlkPSJzdG9wODAiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjEyNzMiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiNDRUQ4REUiCiAgIGlkPSJzdG9wODIiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjI1MDkiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiNCMkMwQzkiCiAgIGlkPSJzdG9wODQiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjM4NDMiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiM5REFFQjciCiAgIGlkPSJzdG9wODYiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjUzMjQiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4RUExQUIiCiAgIGlkPSJzdG9wODgiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjcwNjgiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4NjlBQTQiCiAgIGlkPSJzdG9wOTAiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjk3MjUiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4NDk4QTIiCiAgIGlkPSJzdG9wOTIiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIxIgogICBzdHlsZT0ic3RvcC1jb2xvcjojQzBDMkM0IgogICBpZD0ic3RvcDk0IiAvPgoKICA8L2xpbmVhckdyYWRpZW50PgoKICA8bGluZWFyR3JhZGllbnQKICAgaWQ9IlNWR0lEXzZfIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgeDE9IjI1MS4xMTkiCiAgIHkxPSIyNTkuNzM1NCIKICAgeDI9IjI1MS4xMTkiCiAgIHkyPSI3OS4zOTA2Ij4KICAgIDxzdG9wCiAgIG9mZnNldD0iMCIKICAgc3R5bGU9InN0b3AtY29sb3I6I0ZGRkZGRiIKICAgaWQ9InN0b3A5OSIgLz4KCiAgICA8c3RvcAogICBvZmZzZXQ9IjAuMzM2OCIKICAgc3R5bGU9InN0b3AtY29sb3I6I0JFQ0ZEOCIKICAgaWQ9InN0b3AxMDEiIC8+CgogICAgPHN0b3AKICAgb2Zmc2V0PSIwLjc4MjkiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiM4MjlFQUMiCiAgIGlkPSJzdG9wMTAzIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMSIKICAgc3R5bGU9InN0b3AtY29sb3I6IzZEOEM5QyIKICAgaWQ9InN0b3AxMDUiIC8+CgogIDwvbGluZWFyR3JhZGllbnQ+CgogIDxyYWRpYWxHcmFkaWVudAogICBpZD0iU1ZHSURfN18iCiAgIGN4PSIyMzguMDYyNSIKICAgY3k9IjIwOS4xNzA4IgogICByPSI1OC4xMzAxIgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTExNyAwIDAgMS4wNzkgLTEzLjYyNzMgLTExLjA3MTYpIgogICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICA8c3RvcAogICBvZmZzZXQ9IjAiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDVBN0QiCiAgIGlkPSJzdG9wMTEwIiAvPgoKICAgIDxzdG9wCiAgIG9mZnNldD0iMC43NTgyIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAyODNFIgogICBpZD0ic3RvcDExMiIgLz4KCiAgICA8c3RvcAogICBvZmZzZXQ9IjEiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDJDNDQiCiAgIGlkPSJzdG9wMTE0IiAvPgoKICA8L3JhZGlhbEdyYWRpZW50PgoKPC9zdmc+Cg==&quot;},&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}},{&quot;name&quot;:&quot;ForegroundImageComponent&quot;,&quot;settings&quot;:{&quot;image&quot;:{&quot;size&quot;:[0,0],&quot;src&quot;:&quot;default&quot;,&quot;srcOrientation&quot;:[]},&quot;isForeground&quot;:1,&quot;position&quot;:[0,0,1,1],&quot;scaleMode&quot;:&quot;0&quot;}}],&quot;settings&quot;:{&quot;BindingType&quot;:&quot;signal&quot;,&quot;aspectRatio&quot;:1.032258064516129,&quot;backgroundColor&quot;:[0,0,0,&quot;1&quot;],&quot;backgroundOffset&quot;:1,&quot;backgroundOpacity&quot;:1,&quot;direction&quot;:&quot;cw&quot;,&quot;fixedAspectRatio&quot;:&quot;on&quot;,&quot;flipLimits&quot;:0,&quot;orientation&quot;:&quot;horizontal&quot;,&quot;showBackgroundColor&quot;:false,&quot;value&quot;:0,&quot;version&quot;:&quot;R2023a&quot;},&quot;type&quot;:&quot;CircularGauge&quot;}</P>
+  </Block>
+  <Block BlockType="Reference" Name="Compare&#xA;To Zero" SID="10">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[-1220, -430, -1190, -400]</P>
+    <P Name="ZOrder">317</P>
+    <P Name="LibraryVersion">4.1</P>
+    <P Name="SourceBlock">simulink/Logic and Bit
+Operations/Compare
+To Zero</P>
+    <P Name="SourceType">Compare To Zero</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="relop">&lt;=</P>
+      <P Name="OutDataTypeStr">boolean</P>
+      <P Name="ZeroCross">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Constant" Name="Constant" SID="24">
+    <P Name="Position">[-710, -475, -680, -445]</P>
+    <P Name="ZOrder">5901</P>
+    <P Name="Value">4</P>
+  </Block>
+  <Block BlockType="Constant" Name="Constant1" SID="38">
+    <P Name="Position">[-340, -285, -310, -255]</P>
+    <P Name="ZOrder">5914</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+  </Block>
+  <Block BlockType="Reference" Name="DC Machine" SID="25">
+    <PortCounts in="1" out="1" lconn="2" rconn="2"/>
+    <P Name="Position">[-620, -440, -530, -360]</P>
+    <P Name="ZOrder">5902</P>
+    <P Name="LibrarySourceBlock">sps_lib/Electrical Machines/DC Machine</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsDCMachineLib/DC Machine</P>
+    <P Name="SourceType">DC machine</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="PresetModel">01: 5HP 240V 1750RPM Field:300V</P>
+      <P Name="MechanicalLoad">Torque TL</P>
+      <P Name="FieldType">Wound</P>
+      <P Name="ShowDetailedParameters">on</P>
+      <P Name="MeasurementBus">off</P>
+      <P Name="RLa">[2.581 0.028]</P>
+      <P Name="RLf">[281.2 156]</P>
+      <P Name="Laf">0.9483</P>
+      <P Name="MachineConstant">Torque constant (N.m/A)</P>
+      <P Name="Ke">1.8</P>
+      <P Name="Kt">1.8</P>
+      <P Name="J">0.02215</P>
+      <P Name="Bm">0.002953</P>
+      <P Name="Tf">0.5161</P>
+      <P Name="w0">1</P>
+      <P Name="Ifinit">0.355618776671408</P>
+      <P Name="TsPowergui">0</P>
+      <P Name="TsBlock">-1</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="DC Voltage Source" SID="18">
+    <PortCounts lconn="1" rconn="1"/>
+    <P Name="Position">[-1025, -395, -1005, -360]</P>
+    <P Name="ZOrder">5895</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="LibrarySourceBlock">sps_lib/Sources/DC Voltage Source</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsDCVoltageSourceLib/DC Voltage Source</P>
+    <P Name="SourceType">DC Voltage Source</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Amplitude">100</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="DC Voltage Source1" SID="26">
+    <PortCounts lconn="1" rconn="1"/>
+    <P Name="Position">[-590, -330, -555, -310]</P>
+    <P Name="ZOrder">5903</P>
+    <P Name="BlockRotation">180</P>
+    <P Name="NameLocation">right</P>
+    <P Name="LibrarySourceBlock">sps_lib/Sources/DC Voltage Source</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsDCVoltageSourceLib/DC Voltage Source</P>
+    <P Name="SourceType">DC Voltage Source</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Amplitude">100</P>
+      <P Name="Measurements">None</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="From" Name="From" SID="4">
+    <P Name="Position">[-1435, -389, -1395, -361]</P>
+    <P Name="ZOrder">311</P>
+    <P Name="GotoTag">PID</P>
+  </Block>
+  <Block BlockType="From" Name="From1" SID="14">
+    <P Name="Position">[-1035, -540, -995, -510]</P>
+    <P Name="ZOrder">321</P>
+    <P Name="GotoTag">S1</P>
+  </Block>
+  <Block BlockType="From" Name="From2" SID="15">
+    <P Name="Position">[-880, -540, -840, -510]</P>
+    <P Name="ZOrder">322</P>
+    <P Name="GotoTag">S2</P>
+  </Block>
+  <Block BlockType="From" Name="From3" SID="22">
+    <P Name="Position">[-915, -350, -875, -320]</P>
+    <P Name="ZOrder">5899</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S2</P>
+  </Block>
+  <Block BlockType="From" Name="From4" SID="23">
+    <P Name="Position">[-760, -350, -720, -320]</P>
+    <P Name="ZOrder">5900</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">S1</P>
+  </Block>
+  <Block BlockType="From" Name="From5" SID="39">
+    <P Name="Position">[-390, -254, -350, -226]</P>
+    <P Name="ZOrder">5915</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">Speed</P>
+  </Block>
+  <Block BlockType="Gain" Name="Gain" SID="44">
+    <P Name="Position">[-290, -470, -245, -440]</P>
+    <P Name="ZOrder">5919</P>
+    <P Name="Gain">30/pi</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto" SID="11">
+    <P Name="Position">[-1125, -430, -1085, -400]</P>
+    <P Name="ZOrder">318</P>
+    <P Name="GotoTag">S1</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto1" SID="13">
+    <P Name="Position">[-1170, -300, -1140, -260]</P>
+    <P Name="ZOrder">320</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="GotoTag">S2</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto2" SID="34">
+    <P Name="Position">[-670, -269, -630, -241]</P>
+    <P Name="ZOrder">5910</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="GotoTag">PID</P>
+  </Block>
+  <Block BlockType="Goto" Name="Goto3" SID="40">
+    <P Name="Position">[-257, -555, -213, -515]</P>
+    <P Name="ZOrder">5916</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="NameLocation">left</P>
+    <P Name="GotoTag">Speed</P>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet" SID="16">
+    <PortCounts in="1" out="1" lconn="1" rconn="1"/>
+    <P Name="Position">[-977, -475, -933, -415]</P>
+    <P Name="ZOrder">5893</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibrarySourceBlock">sps_lib/Power Electronics/Mosfet</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet1" SID="19">
+    <PortCounts in="1" out="1" lconn="1" rconn="1"/>
+    <P Name="Position">[-977, -310, -933, -250]</P>
+    <P Name="ZOrder">5896</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibrarySourceBlock">sps_lib/Power Electronics/Mosfet</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet2" SID="20">
+    <PortCounts in="1" out="1" lconn="1" rconn="1"/>
+    <P Name="Position">[-807, -475, -763, -415]</P>
+    <P Name="ZOrder">5897</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibrarySourceBlock">sps_lib/Power Electronics/Mosfet</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Reference" Name="Mosfet3" SID="21">
+    <PortCounts in="1" out="1" lconn="1" rconn="1"/>
+    <P Name="Position">[-807, -310, -763, -250]</P>
+    <P Name="ZOrder">5898</P>
+    <P Name="BlockRotation">90</P>
+    <P Name="NameLocation">left</P>
+    <P Name="LibrarySourceBlock">sps_lib/Power Electronics/Mosfet</P>
+    <P Name="LibraryVersion">5.0</P>
+    <P Name="SourceBlock">spsMosfetLib/Mosfet</P>
+    <P Name="SourceType">Mosfet</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Ron">0.1</P>
+      <P Name="Lon">0</P>
+      <P Name="Rd">0.01</P>
+      <P Name="Vfd">0</P>
+      <P Name="IC">0</P>
+      <P Name="Rs">1e5</P>
+      <P Name="Cs">inf </P>
+      <P Name="Measurements">on</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Mux" Name="Mux" SID="28">
+    <PortCounts in="2" out="1"/>
+    <P Name="Position">[-1325, -574, -1320, -536]</P>
+    <P Name="ZOrder">5904</P>
+    <P Name="Inputs">2</P>
+    <P Name="DisplayOption">bar</P>
+  </Block>
+  <Block BlockType="Logic" Name="NOT" SID="12">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[-1171, -370, -1139, -340]</P>
+    <P Name="ZOrder">319</P>
+    <P Name="BlockRotation">270</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">left</P>
+    <P Name="Operator">NOT</P>
+    <P Name="IconShape">distinctive</P>
+    <P Name="AllPortsSameDT">off</P>
+    <P Name="OutDataTypeStr">boolean</P>
+  </Block>
+  <Block BlockType="Reference" Name="PID Controller" SID="35">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[-595, -273, -555, -237]</P>
+    <P Name="ZOrder">5911</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="LibrarySourceBlock">simulink/Continuous/PID Controller</P>
+    <P Name="LibraryVersion">6.5</P>
+    <P Name="SourceBlock">slpidlib/PID Controller</P>
+    <P Name="SourceType">PID 1dof</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="Controller">PI</P>
+      <P Name="Form">Parallel</P>
+      <P Name="TimeDomain">Continuous-time</P>
+      <P Name="UseExternalTs">off</P>
+      <P Name="SampleTime">-1</P>
+      <P Name="IntegratorMethod">Forward Euler</P>
+      <P Name="FilterMethod">Forward Euler</P>
+      <P Name="ControllerParametersSource">internal</P>
+      <P Name="P">1</P>
+      <P Name="I">1</P>
+      <P Name="UseKiTs">off</P>
+      <P Name="D">0</P>
+      <P Name="N">100</P>
+      <P Name="UseFilter">on</P>
+      <P Name="TunerSelectOption">Transfer Function Based (PID Tuner App)</P>
+      <P Name="ZeroCross">on</P>
+      <P Name="InitialConditionSource">internal</P>
+      <P Name="InitialConditionForIntegrator">0</P>
+      <P Name="InitialConditionForFilter">0</P>
+      <P Name="DifferentiatorICPrevScaledInput">0</P>
+      <P Name="ExternalReset">none</P>
+      <P Name="IgnoreLimit">off</P>
+      <P Name="TrackingMode">off</P>
+      <P Name="Kt">1</P>
+      <P Name="LimitOutput">off</P>
+      <P Name="SatLimitsSource">internal</P>
+      <P Name="UpperSaturationLimit">inf</P>
+      <P Name="LowerSaturationLimit">-inf</P>
+      <P Name="LinearizeAsGain">on</P>
+      <P Name="AntiWindupMode">none</P>
+      <P Name="Kb">1</P>
+      <P Name="LimitIntegrator">off</P>
+      <P Name="UpperIntegratorSaturationLimit">inf</P>
+      <P Name="LowerIntegratorSaturationLimit">-inf</P>
+      <P Name="RndMeth">Floor</P>
+      <P Name="SaturateOnIntegerOverflow">off</P>
+      <P Name="LockScale">off</P>
+      <P Name="PGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="POutMin">[]</P>
+      <P Name="POutMax">[]</P>
+      <P Name="IGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IOutMin">[]</P>
+      <P Name="IOutMax">[]</P>
+      <P Name="DGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DOutMin">[]</P>
+      <P Name="DOutMax">[]</P>
+      <P Name="NGainOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NOutMin">[]</P>
+      <P Name="NOutMax">[]</P>
+      <P Name="SumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumOutMin">[]</P>
+      <P Name="SumOutMax">[]</P>
+      <P Name="SaturationOutDataTypeStr">Inherit: Same as input</P>
+      <P Name="SaturationOutMin">[]</P>
+      <P Name="SaturationOutMax">[]</P>
+      <P Name="PParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="PParamMin">[]</P>
+      <P Name="PParamMax">[]</P>
+      <P Name="IParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IParamMin">[]</P>
+      <P Name="IParamMax">[]</P>
+      <P Name="DParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DParamMin">[]</P>
+      <P Name="DParamMax">[]</P>
+      <P Name="NParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NParamMin">[]</P>
+      <P Name="NParamMax">[]</P>
+      <P Name="KbParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbParamMin">[]</P>
+      <P Name="KbParamMax">[]</P>
+      <P Name="KtParamDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtParamMin">[]</P>
+      <P Name="KtParamMax">[]</P>
+      <P Name="KbOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KbOutMin">[]</P>
+      <P Name="KbOutMax">[]</P>
+      <P Name="KtOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="KtOutMin">[]</P>
+      <P Name="KtOutMax">[]</P>
+      <P Name="IntegratorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="IntegratorOutMin">[]</P>
+      <P Name="IntegratorOutMax">[]</P>
+      <P Name="FilterOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterOutMin">[]</P>
+      <P Name="FilterOutMax">[]</P>
+      <P Name="SumI1OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1OutMin">[]</P>
+      <P Name="SumI1OutMax">[]</P>
+      <P Name="SumI2OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2OutMin">[]</P>
+      <P Name="SumI2OutMax">[]</P>
+      <P Name="SumI3OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3OutMin">[]</P>
+      <P Name="SumI3OutMax">[]</P>
+      <P Name="SumI4OutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4OutMin">[]</P>
+      <P Name="SumI4OutMax">[]</P>
+      <P Name="SumDOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDOutMin">[]</P>
+      <P Name="SumDOutMax">[]</P>
+      <P Name="SumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI1AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI2AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI3AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumI4AccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DifferentiatorOutMin">[]</P>
+      <P Name="DifferentiatorOutMax">[]</P>
+      <P Name="FilterDiffNumProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenProductOutputDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="FilterDiffOutCoefMin">[]</P>
+      <P Name="FilterDiffOutCoefMax">[]</P>
+      <P Name="ReciprocalOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="ReciprocalOutMin">[]</P>
+      <P Name="ReciprocalOutMax">[]</P>
+      <P Name="SumDenOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumDenOutMin">[]</P>
+      <P Name="SumDenOutMax">[]</P>
+      <P Name="SumNumOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumOutMin">[]</P>
+      <P Name="SumNumOutMax">[]</P>
+      <P Name="SumDenAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="SumNumAccumDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="DivideOutMin">[]</P>
+      <P Name="DivideOutMax">[]</P>
+      <P Name="UdiffTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UdiffTsProdOutMin">[]</P>
+      <P Name="UdiffTsProdOutMax">[]</P>
+      <P Name="NTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="NTsProdOutMin">[]</P>
+      <P Name="NTsProdOutMax">[]</P>
+      <P Name="UintegralTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UintegralTsProdOutMin">[]</P>
+      <P Name="UintegralTsProdOutMax">[]</P>
+      <P Name="UngainTsProdOutDataTypeStr">Inherit: Inherit via internal rule</P>
+      <P Name="UngainTsProdOutMin">[]</P>
+      <P Name="UngainTsProdOutMax">[]</P>
+      <P Name="ClampingZeroOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="ClampingZeroOutMin">[]</P>
+      <P Name="ClampingZeroOutMax">[]</P>
+      <P Name="FilterDenConstantOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="FilterDenConstantOutMin">[]</P>
+      <P Name="FilterDenConstantOutMax">[]</P>
+      <P Name="PCopyOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="PCopyOutMin">[]</P>
+      <P Name="PCopyOutMax">[]</P>
+      <P Name="NCopyOutDataTypeStr">Inherit: Inherit via back propagation</P>
+      <P Name="NCopyOutMin">[]</P>
+      <P Name="NCopyOutMax">[]</P>
+      <P Name="IntegratorContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="IntegratorStateMustResolveToSignalObject">off</P>
+      <P Name="IntegratorRTWStateStorageClass">Auto</P>
+      <P Name="FilterContinuousStateAttributes">&apos;&apos;</P>
+      <P Name="FilterStateMustResolveToSignalObject">off</P>
+      <P Name="FilterRTWStateStorageClass">Auto</P>
+      <P Name="ParallelPVariant">InternalParameters</P>
+      <P Name="IdealPVariant">Disabled</P>
+      <P Name="IVariant">InternalParameters</P>
+      <P Name="DVariant">Disabled</P>
+      <P Name="IntegratorVariant">Continuous</P>
+      <P Name="SatVariant">Disabled</P>
+      <P Name="AWVariant">Passthrough</P>
+      <P Name="PCopyVariant">Disabled</P>
+      <P Name="TRVariant">Disabled</P>
+      <P Name="FdbkBlocksVariant">Forward</P>
+      <P Name="IdealPFdbkVariant">Disabled</P>
+      <P Name="SatFdbkVariant">Disabled</P>
+      <P Name="DerivativeFilterVariant">Disabled</P>
+      <P Name="NVariant">Disabled</P>
+      <P Name="NCopyVariant">Disabled_SignalSpec</P>
+      <P Name="FilterICVariant">Disabled</P>
+      <P Name="IntegratorICVariant">InternalICs</P>
+      <P Name="ExternalResetVariant">Disabled</P>
+      <P Name="TRSumVariant">Passthrough</P>
+      <P Name="SumFdbkVariant">Disabled</P>
+      <P Name="SumVariant">Sum_PI</P>
+      <P Name="TsampFilterVariant">InternalTs</P>
+      <P Name="TsampNgainVariant">Passthrough</P>
+      <P Name="TsampIntegralVariant">Disabled_SignalSpec</P>
+      <P Name="ExternalSaturationOutDataTypeStr">Inherit: Same as second input</P>
+      <P Name="InitialConditionSetting">Auto</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="SignalGenerator" Name="Sawtooth&#xA;Generator" SID="1">
+    <PortCounts out="1"/>
+    <P Name="Position">[-1500, -455, -1470, -425]</P>
+    <P Name="ZOrder">285</P>
+    <P Name="WaveForm">sawtooth</P>
+    <P Name="Units">rad/sec</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope" SID="9">
+    <PortCounts in="2"/>
+    <P Name="Position">[-1225, -567, -1185, -518]</P>
+    <P Name="ZOrder">316</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-341.47716&apos;,&apos;MaxYLimReal&apos;,&apos;110.03759&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;341.47716&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,3,&apos;LineNames&apos;,{{&apos;Abs&apos;,&apos;PID Controller&apos;,&apos;Add&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;MinYLimReal&apos;,&apos;-341.47716&apos;,&apos;MaxYLimReal&apos;,&apos;110.03759&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;341.47716&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;)</P>
+    <P Name="NumInputPorts">2</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Scope" Name="Scope1" SID="32">
+    <PortCounts in="4"/>
+    <P Name="Position">[-200, -464, -150, -386]</P>
+    <P Name="ZOrder">5908</P>
+    <P Name="ScopeSpecificationString">Simulink.scopes.TimeScopeBlockCfg(&apos;CurrentConfiguration&apos;, extmgr.ConfigurationSet(extmgr.Configuration(&apos;Core&apos;,&apos;General UI&apos;,true),extmgr.Configuration(&apos;Core&apos;,&apos;Source UI&apos;,true),extmgr.Configuration(&apos;Sources&apos;,&apos;WiredSimulink&apos;,true,&apos;DataLoggingVariableName&apos;,&apos;ScopeData1&apos;),extmgr.Configuration(&apos;Visuals&apos;,&apos;Time Domain&apos;,true,&apos;SerializedDisplays&apos;,{struct(&apos;MinYLimReal&apos;,&apos;-100.16221&apos;,&apos;MaxYLimReal&apos;,&apos;424.67921&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;424.67921&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;Gain&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,1),struct(&apos;MinYLimReal&apos;,&apos;-70.41475&apos;,&apos;MaxYLimReal&apos;,&apos;156.95211&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;424.67921&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;&lt;Armature current ia (A)&gt;&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,2),struct(&apos;MinYLimReal&apos;,&apos;0.3556187766714038&apos;,&apos;MaxYLimReal&apos;,&apos;0.3556187766714131&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;424.67921&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;&lt;Field current if (A)&gt;&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,3),struct(&apos;MinYLimReal&apos;,&apos;-23.7462&apos;,&apos;MaxYLimReal&apos;,&apos;52.92947&apos;,&apos;YLabelReal&apos;,&apos;&apos;,&apos;MinYLimMag&apos;,&apos; 0.00000&apos;,&apos;MaxYLimMag&apos;,&apos;424.67921&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],&apos;Title&apos;,&apos;%&lt;SignalLabel&gt;&apos;,&apos;LinePropertiesCache&apos;,{{}},&apos;UserDefinedChannelNames&apos;,{{}},&apos;NumLines&apos;,1,&apos;LineNames&apos;,{{&apos;&lt;Electrical torque Te (n m)&gt;&apos;}},&apos;ShowContent&apos;,true,&apos;Placement&apos;,4)},&apos;DisplayPropertyDefaults&apos;,struct(&apos;YLabelReal&apos;,&apos;&apos;,&apos;LegendVisibility&apos;,&apos;off&apos;,&apos;XGrid&apos;,true,&apos;YGrid&apos;,true,&apos;PlotMagPhase&apos;,false,&apos;AxesColor&apos;,[0 0 0],&apos;AxesTickColor&apos;,[0.686274509803922 0.686274509803922 0.686274509803922],&apos;ColorOrder&apos;,[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),&apos;DisplayLayoutDimensions&apos;,[4 1]),extmgr.Configuration(&apos;Tools&apos;,&apos;Plot Navigation&apos;,true,&apos;OnceAtStop&apos;,false,&apos;PreviousZoomMode&apos;,&apos;ZoomX&apos;,&apos;PreviousAutoscale&apos;,&apos;X&apos;),extmgr.Configuration(&apos;Tools&apos;,&apos;Measurements&apos;,true,&apos;Version&apos;,&apos;2023a&apos;)),&apos;Version&apos;,&apos;2023a&apos;,&apos;Position&apos;,[1 1 1536 788.8])</P>
+    <P Name="NumInputPorts">4</P>
+    <P Name="Floating">off</P>
+  </Block>
+  <Block BlockType="Reference" Name="Slider&#xA;Gain" SID="37">
+    <PortCounts in="1" out="1"/>
+    <P Name="Position">[-425, -285, -395, -255]</P>
+    <P Name="ZOrder">5913</P>
+    <P Name="BlockMirror">on</P>
+    <P Name="NameLocation">top</P>
+    <P Name="LibraryVersion">4.1</P>
+    <P Name="SourceBlock">simulink/Math
+Operations/Slider
+Gain</P>
+    <P Name="SourceType">Slider Gain</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="gain">300.0</P>
+      <P Name="low">0</P>
+      <P Name="high">300</P>
+    </InstanceData>
+  </Block>
+  <Block BlockType="Display" Name="Speed (RPM)" SID="41">
+    <PortCounts in="1"/>
+    <P Name="Position">[-175, -550, -85, -520]</P>
+    <P Name="ZOrder">5917</P>
+    <P Name="Decimation">1</P>
+  </Block>
+  <Block BlockType="Reference" Name="powergui" SID="43">
+    <PortCounts/>
+    <P Name="Position">[-1505, -585, -1424, -546]</P>
+    <P Name="ZOrder">5918</P>
+    <P Name="Priority">1</P>
+    <P Name="LibraryVersion">*12</P>
+    <P Name="SourceBlock">sps_lib/powergui</P>
+    <P Name="SourceType">PSB option menu block</P>
+    <InstanceData>
+      <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
+      <P Name="RTWMemSecFuncExecute">Inherit from model</P>
+      <P Name="RTWMemSecDataConstants">Inherit from model</P>
+      <P Name="RTWMemSecDataInternal">Inherit from model</P>
+      <P Name="RTWMemSecDataParameters">Inherit from model</P>
+      <P Name="ContentPreviewEnabled">on</P>
+      <P Name="SimulationMode">Continuous</P>
+      <P Name="SampleTime">50e-6</P>
+      <P Name="frequency">60</P>
+      <P Name="Iterations">50</P>
+      <P Name="frequencyindice">0</P>
+      <P Name="Pbase">100e6</P>
+      <P Name="ErrMax">1e-4</P>
+      <P Name="UnitsV">kV</P>
+      <P Name="UnitsW">MW</P>
+      <P Name="buscounter">0</P>
+      <P Name="FunctionMessages">off</P>
+      <P Name="echomessages">off</P>
+      <P Name="EnableUseOfTLC">off</P>
+      <P Name="CurrentSourceSwitches">off</P>
+      <P Name="DisableSnubberDevices">off</P>
+      <P Name="DisableRonSwitches">off</P>
+      <P Name="DisableVfSwitches">off</P>
+      <P Name="DisplayEquations">off</P>
+      <P Name="AutomaticDiscreteSolvers">off</P>
+      <P Name="SolverType">Tustin/Backward Euler (TBE)</P>
+      <P Name="Interpol">off</P>
+      <P Name="ExternalGateDelay">off</P>
+      <P Name="methode">off</P>
+      <P Name="Ts">100</P>
+      <P Name="x0status">blocks</P>
+      <P Name="SPID">on</P>
+      <P Name="SwTol">0</P>
+      <P Name="HookPort">off</P>
+      <P Name="NonlinearTolerance">1e-4</P>
+      <P Name="nMaxIteration">100</P>
+      <P Name="ContinueOnMaxIteration">off</P>
+      <P Name="RestoreLinks">warning</P>
+      <P Name="ResistiveCurrentMeasurement">off</P>
+      <P Name="Frange">[0:2:500]</P>
+      <P Name="Ylog">off</P>
+      <P Name="Xlog">on</P>
+      <P Name="ShowGrid">off</P>
+      <P Name="save">off</P>
+      <P Name="variable">ZData</P>
+      <P Name="structure">0</P>
+      <P Name="ZoomFFT">off</P>
+      <P Name="StartTime">0.0</P>
+      <P Name="cycles">1</P>
+      <P Name="DisplayStyle">1</P>
+      <P Name="fundamental">60</P>
+      <P Name="FreqAxis">off</P>
+      <P Name="MaxFrequency">1000</P>
+      <P Name="frequencyindicesteady">1</P>
+      <P Name="RmsSteady">1</P>
+      <P Name="display">off</P>
+    </InstanceData>
+  </Block>
+  <Line>
+    <P Name="ZOrder">6</P>
+    <P Name="Src">1#out:1</P>
+    <P Name="Dst">8#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">7</P>
+    <P Name="Src">8#out:1</P>
+    <P Name="Points">[16, 0]</P>
+    <Branch>
+      <P Name="ZOrder">43</P>
+      <P Name="Points">[0, -125]</P>
+      <P Name="Dst">28#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">11</P>
+      <P Name="Dst">5#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">8</P>
+    <P Name="Src">4#out:1</P>
+    <P Name="Points">[30, 0; 0, -20]</P>
+    <Branch>
+      <P Name="ZOrder">42</P>
+      <P Name="Points">[0, -150]</P>
+      <P Name="Dst">28#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">10</P>
+      <P Name="Dst">5#in:2</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">41</P>
+    <P Name="Src">28#out:1</P>
+    <P Name="Dst">9#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">14</P>
+    <P Name="Src">5#out:1</P>
+    <P Name="Points">[14, 0]</P>
+    <Branch>
+      <P Name="ZOrder">16</P>
+      <P Name="Points">[0, -115]</P>
+      <P Name="Dst">9#in:2</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">15</P>
+      <P Name="Dst">10#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">17</P>
+    <P Name="Src">10#out:1</P>
+    <P Name="Points">[30, 0]</P>
+    <Branch>
+      <P Name="ZOrder">19</P>
+      <P Name="Dst">12#in:1</P>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">18</P>
+      <P Name="Dst">11#in:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">20</P>
+    <P Name="Src">12#out:1</P>
+    <P Name="Dst">13#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">21</P>
+    <P Name="Src">14#out:1</P>
+    <P Name="Points">[45, 0]</P>
+    <P Name="Dst">16#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">22</P>
+    <P Name="Src">16#lconn:1</P>
+    <P Name="Points">[0, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">20#lconn:1</P>
+      <P Name="Points">[-170, 0]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Points">[0, -2; -50, 0]</P>
+      <P Name="Dst">18#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">23</P>
+    <P Name="Src">18#lconn:1</P>
+    <P Name="Points">[0, 110; 50, 0]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">19#rconn:1</P>
+      <P Name="Points">[0, 0]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">21#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">26</P>
+    <P Name="Src">19#lconn:1</P>
+    <P Name="Points">[0, -75]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">25#lconn:1</P>
+      <P Name="Points">[-330, 0]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">16#rconn:1</P>
+    </Branch>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">27</P>
+    <P Name="Src">20#rconn:1</P>
+    <P Name="Points">[0, 39]</P>
+    <Branch ConnectType="DEST_DEST">
+      <P Name="Src">25#rconn:1</P>
+      <P Name="Points">[26, 0; 0, 55; -189, 0; 0, -16; -117, 0]</P>
+    </Branch>
+    <Branch ConnectType="DEST_SRC">
+      <P Name="Dst">21#lconn:1</P>
+    </Branch>
+  </Line>
+  <Line>
+    <P Name="ZOrder">28</P>
+    <P Name="Src">22#out:1</P>
+    <P Name="Points">[-25, 0]</P>
+    <P Name="Dst">19#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">29</P>
+    <P Name="Src">15#out:1</P>
+    <P Name="Points">[60, 0]</P>
+    <P Name="Dst">20#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">32</P>
+    <P Name="Src">23#out:1</P>
+    <P Name="Points">[-10, 0]</P>
+    <P Name="Dst">21#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">33</P>
+    <P Name="Src">24#out:1</P>
+    <P Name="Points">[20, 0; 0, 35]</P>
+    <P Name="Dst">25#in:1</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">37</P>
+    <P Name="Src">26#rconn:1</P>
+    <P Name="Points">[-30, 0]</P>
+    <P Name="Dst">25#lconn:2</P>
+  </Line>
+  <Line LineType="Connection">
+    <P Name="ZOrder">38</P>
+    <P Name="Src">26#lconn:1</P>
+    <P Name="Points">[27, 0; 0, -55]</P>
+    <P Name="Dst">25#rconn:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">45</P>
+    <P Name="Src">25#out:1</P>
+    <P Name="Dst">31#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Speed wm (rad/s)&gt;</P>
+    <P Name="ZOrder">46</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">31#out:1</P>
+    <P Name="Dst">44#in:1</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Armature current ia (A)&gt;</P>
+    <P Name="ZOrder">47</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">31#out:2</P>
+    <P Name="Dst">32#in:2</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Field current if (A)&gt;</P>
+    <P Name="ZOrder">48</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">31#out:3</P>
+    <P Name="Dst">32#in:3</P>
+  </Line>
+  <Line>
+    <P Name="Name">&lt;Electrical torque Te (n m)&gt;</P>
+    <P Name="ZOrder">49</P>
+    <P Name="Labels">[0, 0]</P>
+    <P Name="Src">31#out:4</P>
+    <P Name="Dst">32#in:4</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">52</P>
+    <P Name="Src">35#out:1</P>
+    <P Name="Dst">34#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">53</P>
+    <P Name="Src">36#out:1</P>
+    <P Name="Dst">35#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">54</P>
+    <P Name="Src">37#out:1</P>
+    <P Name="Dst">36#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">55</P>
+    <P Name="Src">38#out:1</P>
+    <P Name="Dst">37#in:1</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">56</P>
+    <P Name="Src">39#out:1</P>
+    <P Name="Dst">36#in:2</P>
+  </Line>
+  <Line>
+    <P Name="ZOrder">62</P>
+    <P Name="Src">44#out:1</P>
+    <P Name="Points">[5, 0]</P>
+    <Branch>
+      <P Name="ZOrder">58</P>
+      <P Name="Points">[0, -35]</P>
+      <Branch>
+        <P Name="ZOrder">65</P>
+        <P Name="Dst">40#in:1</P>
+      </Branch>
+      <Branch>
+        <P Name="ZOrder">61</P>
+        <P Name="Points">[38, 0; 0, -45]</P>
+        <P Name="Dst">41#in:1</P>
+      </Branch>
+    </Branch>
+    <Branch>
+      <P Name="ZOrder">57</P>
+      <P Name="Dst">32#in:1</P>
+    </Branch>
+  </Line>
+  <Annotation SID="42">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:16px;&quot;&gt;Speed (RPM)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:16px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-530, -482, -437, -438]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="Interpreter">rich</P>
+  </Annotation>
+</System>
